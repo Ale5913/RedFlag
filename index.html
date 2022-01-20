@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Untitled</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700">
+    <link rel="stylesheet" href="assets/css/Footer-Clean.css">
+    <link rel="stylesheet" href="assets/css/Header-Blue.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/Testimonials.css">
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/brain/0.6.3/brain.js'></script>
+</head>
+
+<body>
+    <div>
+        <div class="header-blue">
+            <nav class="navbar navbar-dark navbar-expand-md navigation-clean-search">
+                <div class="container"><a class="navbar-brand" href="#">Red Flag</a><button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+                    <div class="collapse navbar-collapse"
+                        id="navcol-1">
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item" role="presentation"><a class="nav-link active" href="#">Acerca de nosotros</a></li>
+                            <li class="dropdown"><a class="dropdown-toggle nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="#">Ayuda en linea</a>
+                                <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="#">First Item</a><a class="dropdown-item" role="presentation" href="#">Second Item</a><a class="dropdown-item" role="presentation" href="#">Third Item</a></div>
+                            </li>
+                        </ul>
+                        <form class="form-inline mr-auto" target="_self">
+                            <div class="form-group"><label for="search-field"><i class="fa fa-share-alt"></i></label><input class="form-control search-field" type="search" name="search" id="search-field"></div>
+                        </form><span class="navbar-text"> <a href="#" class="login">Log In</a></span><a class="btn btn-light action-button" role="button" href="#">Sign Up</a></div>
+                </div>
+            </nav><img class="d-none device" src="assets/img/2.png" height="300">
+            <div class="container hero">
+                <div class="row">
+                    <div class="col-12 col-lg-6 col-xl-5 offset-xl-1">
+                        <h1>¿Quieres saber que tanta violencia hay en su relacion?</h1>
+                        <p>Averigualo usando nuestra red neuronal,</p><button class="btn btn-light btn-lg action-button" type="button">Comenzar el Test</button></div>
+                    <div class="col-md-5 col-lg-5 offset-lg-1 offset-xl-0 d-none d-lg-block phone-holder">
+                        <div class="iphone-mockup"><img src="assets/img/image_processing20200808-9337-15jqx8m.png" class="device"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="testimonials-clean">
+        <div class="container">
+            <div class="intro">
+                <h2 class="text-center">Contesta lo mas sincero posible.</h2>
+                        <p>1- Te miente o engaña?<br>
+                            <input type="radio" id="miente" name="miente" value="1" onchange="document.getElementById('outmiente').value=value"> muchas veces<br>
+                            <input type="radio" id="miente" name="miente" value="0.5" onchange="document.getElementById('outmiente').value=value"> pocas veces<br>
+                            <input type="radio" id="miente" name="miente" value="0.25" onchange="document.getElementById('outmiente').value=value"> una vez<br>
+                            <input type="radio" id="miente" name="miente" value="0" onchange="document.getElementById('outmiente').value=value"> no ocurre<br>
+                            <output id="outmiente" name="outmiente" for="violencia">0</output>
+                        </p>
+                        <br>
+
+                        <p>2- Te aplican la ley del hielo?<br>
+                            <input type="radio" id="hielo" name="hielo" value="1" onchange="document.getElementById('outhielo').value=value"> muchas veces<br>
+                            <input type="radio" id="hielo" name="hielo" value="0.5" onchange="document.getElementById('outhielo').value=value"> pocas veces<br>
+                            <input type="radio" id="hielo" name="hielo" value="0.25" onchange="document.getElementById('outhielo').value=value"> una vez<br>
+                            <input type="radio" id="hielo" name="hielo" value="0" onchange="document.getElementById('outhielo').value=value"> no ocurre<br>
+                            <output id="outhielo" name="outhielo" for="violencia">0</output>
+                        </p>
+                        <br>
+
+                        <p>3- Te cela?<br>
+                            <input type="radio" id="celos" name="celos" value="1" onchange="document.getElementById('outcelos').value=value"> muchas veces<br>
+                            <input type="radio" id="celos" name="celos" value="0.5" onchange="document.getElementById('outcelos').value=value"> pocas veces<br>
+                            <input type="radio" id="celos" name="celos" value="0.25" onchange="document.getElementById('outcelos').value=value"> una vez<br>
+                            <input type="radio" id="celos" name="celos" value="0" onchange="document.getElementById('outcelos').value=value"> no ocurre<br>
+                            <output id="outcelos" name="outcelos" for="violencia">0</output>
+                        </p>
+                        <br>
+
+                        <p>4- ¿Te culpabiliza?<br>
+                            <input type="radio" id="culpa" name="culpa" value="1" onchange="document.getElementById('outculpa').value=value"> muchas veces<br>
+                            <input type="radio" id="culpa" name="culpa" value="0.5" onchange="document.getElementById('outculpa').value=value"> pocas veces<br>
+                            <input type="radio" id="culpa" name="culpa" value="0.25" onchange="document.getElementById('outculpa').value=value"> una vez<br>
+                            <input type="radio" id="culpa" name="culpa" value="0" onchange="document.getElementById('outculpa').value=value"> no ocurre<br>
+                            <output id="outculpa" name="outculpa" for="violencia">0</output>
+                        </p>
+                        <br>
+
+                        <p>5- ¿Te ridiculizan y ofenden?<br>
+                            <input type="radio" id="ofender" name="ofender" value="1" onchange="document.getElementById('outofender').value=value"> muchas veces<br>
+                            <input type="radio" id="ofender" name="ofender" value="0.5" onchange="document.getElementById('outofender').value=value"> pocas veces<br>
+                            <input type="radio" id="ofender" name="ofender" value="0.25" onchange="document.getElementById('outofender').value=value"> una vez<br>
+                            <input type="radio" id="ofender" name="ofender" value="0" onchange="document.getElementById('outofender').value=value"> no ocurre<br>
+                            <output id="outofender" name="outofender" for="violencia">0</output>
+                        </p>
+                        <br>
+
+                        <p>6- ¿Te humilla?<br>
+                            <input type="radio" id="humillar" name="humillar" value="1" onchange="document.getElementById('outhumillar').value=value"> muchas veces<br>
+                            <input type="radio" id="humillar" name="humillar" value="0.5" onchange="document.getElementById('outhumillar').value=value"> pocas veces<br>
+                            <input type="radio" id="humillar" name="humillar" value="0.25" onchange="document.getElementById('outhumillar').value=value"> una vez<br>
+                            <input type="radio" id="humillar" name="humillar" value="0" onchange="document.getElementById('outhumillar').value=value"> no ocurre<br>
+                            <output id="outhumillar" name="outhumillar" for="violencia">0</output>
+                        </p>
+                        <br>
+
+                        <p>7- ¿Te intimida o amenaza?<br>
+                            <input type="radio" id="amenaza" name="amenaza" value="1" onchange="document.getElementById('outamenaza').value=value"> muchas veces<br>
+                            <input type="radio" id="amenaza" name="amenaza" value="0.5" onchange="document.getElementById('outamenaza').value=value"> pocas veces<br>
+                            <input type="radio" id="amenaza" name="amenaza" value="0.25" onchange="document.getElementById('outamenaza').value=value"> una vez<br>
+                            <input type="radio" id="amenaza" name="amenaza" value="0" onchange="document.getElementById('outamenaza').value=value"> no ocurre<br>
+                            <output id="outamenaza" name="outamenaza" for="violencia">0</output>
+                        </p>
+                        <br>
+                        
+                        <p>8- ¿Controlan o prohiben las amistades?<br>
+                            <input type="radio" id="controlA" name="controlA" value="1" onchange="document.getElementById('outcontrolA').value=value"> muchas veces<br>
+                            <input type="radio" id="controlA" name="controlA" value="0.5" onchange="document.getElementById('outcontrolA').value=value"> pocas veces<br>
+                            <input type="radio" id="controlA" name="controlA" value="0.25" onchange="document.getElementById('outcontrolA').value=value"> una vez<br>
+                            <input type="radio" id="controlA" name="controlA" value="0" onchange="document.getElementById('outcontrolA').value=value"> no ocurre<br>
+                            <output id="outcontrolA" name="outcontrolA" for="violencia">0</output>
+                        </p>
+                        <br>
+
+                        <p>9- ¿Controla o prohibe la familia?<br>
+                            <input type="radio" id="controlF" name="controlF" value="1" onchange="document.getElementById('outcontrolF').value=value"> muchas veces<br>
+                            <input type="radio" id="controlF" name="controlF" value="0.5" onchange="document.getElementById('outcontrolF').value=value"> pocas veces<br>
+                            <input type="radio" id="controlF" name="controlF" value="0.25" onchange="document.getElementById('outcontrolF').value=value"> una vez<br>
+                            <input type="radio" id="controlF" name="controlF" value="0" onchange="document.getElementById('outcontrolF').value=value"> no ocurre<br>
+                            <output id="outcontrolF" name="outcontrolF" for="violencia">0</output>
+                        </p>
+                        <br>
+
+                        <p>10- ¿Controla o prohibe el dinero?<br>
+                            <input type="radio" id="controlD" name="controlD" value="1" onchange="document.getElementById('outcontrolD').value=value"> muchas veces<br>
+                            <input type="radio" id="controlD" name="controlD" value="0.5" onchange="document.getElementById('outcontrolD').value=value"> pocas veces<br>
+                            <input type="radio" id="controlD" name="controlD" value="0.25" onchange="document.getElementById('outcontrolD').value=value"> una vez<br>
+                            <input type="radio" id="controlD" name="controlD" value="0" onchange="document.getElementById('outcontrolD').value=value"> no ocurre<br>
+                            <output id="outcontrolD" name="outcontrolD" for="violencia">0</output>
+                        </p>
+                        <br>
+
+                        <p>11- ¿Controla o prohibe lugares?<br>
+                            <input type="radio" id="controlL" name="controlL" value="1" onchange="document.getElementById('outcontrolL').value=value"> muchas veces<br>
+                            <input type="radio" id="controlL" name="controlL" value="0.5" onchange="document.getElementById('outcontrolL').value=value"> pocas veces<br>
+                            <input type="radio" id="controlL" name="controlL" value="0.25" onchange="document.getElementById('outcontrolL').value=value"> una vez<br>
+                            <input type="radio" id="controlL" name="controlL" value="0" onchange="document.getElementById('outcontrolL').value=value"> no ocurre<br>
+                            <output id="outcontrolL" name="outcontrolL" for="violencia">0</output>
+                        </p>
+                        <br>
+
+                        <p>12- ¿Controla o prohibe tu apariencia?<br>
+                            <input type="radio" id="controlAP" name="controlAP" value="1" onchange="document.getElementById('outcontrolAP').value=value"> muchas veces<br>
+                            <input type="radio" id="controlAP" name="controlAP" value="0.5" onchange="document.getElementById('outcontrolAP').value=value"> pocas veces<br>
+                            <input type="radio" id="controlAP" name="controlAP" value="0.25" onchange="document.getElementById('outcontrolAP').value=value"> una vez<br>
+                            <input type="radio" id="controlAP" name="controlAP" value="0" onchange="document.getElementById('outcontrolAP').value=value"> no ocurre<br>
+                            <output id="outcontrolAP" name="outcontrolAP" for="violencia">0</output>
+                            <br>
+
+                        <p>13- ¿Controla o prohibe actividades?<br>
+                            <input type="radio" id="controlAC" name="controlAC" value="1" onchange="document.getElementById('outcontrolAC').value=value"> muchas veces<br>
+                            <input type="radio" id="controlAC" name="controlAC" value="0.5" onchange="document.getElementById('outcontrolAC').value=value"> pocas veces<br>
+                            <input type="radio" id="controlAC" name="controlAC" value="0.25" onchange="document.getElementById('outcontrolAC').value=value"> una vez<br>
+                            <input type="radio" id="controlAC" name="controlAC" value="0" onchange="document.getElementById('outcontrolAC').value=value"> no ocurre<br>
+                            <output id="outcontrolAC" name="outcontrolAC" for="violencia">0</output>
+                        </p>
+                        <br>
+
+                        <p>14- ¿Controla o prohibe el uso del celular?<br>
+                            <input type="radio" id="controlC" name="controlC" value="1" onchange="document.getElementById('outcontrolC').value=value"> muchas veces<br>
+                            <input type="radio" id="controlC" name="controlC" value="0.5" onchange="document.getElementById('outcontrolC').value=value"> pocas veces<br>
+                            <input type="radio" id="controlC" name="controlC" value="0.25" onchange="document.getElementById('outcontrolC').value=value"> una vez<br>
+                            <input type="radio" id="controlC" name="controlC" value="0" onchange="document.getElementById('outcontrolC').value=value"> no ocurre<br>
+                            <output id="outcontrolC" name="outcontrolC" for="violencia">0</output>
+                        </p>
+                        <br>
+
+                        <p>15- ¿Destruye tus objetos personales?<br>
+                            <input type="radio" id="destruye" name="destruye" value="1" onchange="document.getElementById('outdestruye').value=value"> muchas veces<br>
+                            <input type="radio" id="destruye" name="destruye" value="0.5" onchange="document.getElementById('outdestruye').value=value"> pocas veces<br>
+                            <input type="radio" id="destruye" name="destruye" value="0.25" onchange="document.getElementById('outdestruye').value=value"> una vez<br>
+                            <input type="radio" id="destruye" name="destruye" value="0" onchange="document.getElementById('outdestruye').value=value"> no ocurre<br>
+                            <output id="outdestruye" name="outdestruye" for="violencia">0</output>
+                        </p>
+                        <br>
+
+                        <p>16- ¿Te ha manoseado?<br>
+                            <input type="radio" id="manosea" name="manosea" value="1" onchange="document.getElementById('outmanosea').value=value"> muchas veces<br>
+                            <input type="radio" id="manosea" name="manosea" value="0.5" onchange="document.getElementById('outmanosea').value=value"> pocas veces<br>
+                            <input type="radio" id="manosea" name="manosea" value="0.25" onchange="document.getElementById('outmanosea').value=value"> una vez<br>
+                            <input type="radio" id="manosea" name="manosea" value="0" onchange="document.getElementById('outmanosea').value=value"> no ocurre<br>
+                            <output id="outmanosea" name="outmanosea" for="violencia">0</output>
+                        </p>
+                        <br>
+
+                        <p>17- ¿Te golpea como juego?<br>
+                            <input type="radio" id="golpea" name="golpea" value="1" onchange="document.getElementById('outgolpea').value=value"> muchas veces<br>
+                            <input type="radio" id="golpea" name="golpea" value="0.5" onchange="document.getElementById('outgolpea').value=value"> pocas veces<br>
+                            <input type="radio" id="golpea" name="golpea" value="0.25" onchange="document.getElementById('outgolpea').value=value"> una vez<br>
+                            <input type="radio" id="golpea" name="golpea" value="0" onchange="document.getElementById('outgolpea').value=value"> no ocurre<br>
+                            <output id="outgolpea" name="outgolpea" for="violencia">0</output>
+                        </p>
+                        <br>
+
+                        <p>18- ¿Te cachetea?<br>
+                            <input type="radio" id="cachetada" name="cachetada" value="1" onchange="document.getElementById('outcachetada').value=value"> muchas veces<br>
+                            <input type="radio" id="cachetada" name="cachetada" value="0.5" onchange="document.getElementById('outcachetada').value=value"> pocas veces<br>
+                            <input type="radio" id="cachetada" name="cachetada" value="0.25" onchange="document.getElementById('outcachetada').value=value"> una vez<br>
+                            <input type="radio" id="cachetada" name="cachetada" value="0" onchange="document.getElementById('outcachetada').value=value"> no ocurre<br>
+                            <output id="outcachetada" name="outcachetada" for="violencia">0</output>
+                        </p>
+                        <br>
+
+                        <p>19- ¿Te ha pateado?<br>
+                            <input type="radio" id="patada" name="patada" value="1" onchange="document.getElementById('outpatada').value=value"> muchas veces<br>
+                            <input type="radio" id="patada" name="patada" value="0.5" onchange="document.getElementById('outpatada').value=value"> pocas veces<br>
+                            <input type="radio" id="patada" name="patada" value="0.25" onchange="document.getElementById('outpatada').value=value"> una vez<br>
+                            <input type="radio" id="patada" name="patada" value="0" onchange="document.getElementById('outpatada').value=value"> no ocurre<br>
+                            <output id="outpatada" name="outpatada" for="violencia">0</output>
+                        </p>
+                        <br>
+
+                        <p>20- ¿Te ha encerrado?<br>
+                            <input type="radio" id="encierro" name="encierro" value="1" onchange="document.getElementById('outencierro').value=value"> muchas veces<br>
+                            <input type="radio" id="encierro" name="encierro" value="0.5" onchange="document.getElementById('outencierro').value=value"> pocas veces<br>
+                            <input type="radio" id="encierro" name="encierro" value="0.25" onchange="document.getElementById('outencierro').value=value"> una vez<br>
+                            <input type="radio" id="encierro" name="encierro" value="0" onchange="document.getElementById('outencierro').value=value"> no ocurre<br>
+                            <output id="outencierro" name="outencierro" for="violencia">0</output>
+                        </p>
+                        <br>
+
+                        <p>21- ¿Te ha amenazado con objetos o armas?<br>
+                            <input type="radio" id="armas" name="armas" value="1" onchange="document.getElementById('outarmas').value=value"> muchas veces<br>
+                            <input type="radio" id="armas" name="armas" value="0.5" onchange="document.getElementById('outarmas').value=value"> pocas veces<br>
+                            <input type="radio" id="armas" name="armas" value="0.25" onchange="document.getElementById('outarmas').value=value"> una vez<br>
+                            <input type="radio" id="armas" name="armas" value="0" onchange="document.getElementById('outarmas').value=value"> no ocurre<br>
+                            <output id="outarmas" name="outarmas" for="violencia">0</output>
+                        </p>
+                        <br>
+
+                        <p>22- ¿Te ha amenazado de muerte?<br>
+                            <input type="radio" id="muerte" name="muerte" value="1" onchange="document.getElementById('outmuerte').value=value"> muchas veces<br>
+                            <input type="radio" id="muerte" name="muerte" value="0.5" onchange="document.getElementById('outmuerte').value=value"> pocas veces<br>
+                            <input type="radio" id="muerte" name="muerte" value="0.25" onchange="document.getElementById('outmuerte').value=value"> una vez<br>
+                            <input type="radio" id="muerte" name="muerte" value="0" onchange="document.getElementById('outmuerte').value=value"> no ocurre<br>  
+                            <output id="outmuerte" name="outmuerte" for="violencia">0</output>
+                        </p>
+                        <br>
+
+                        <p>23- ¿Te ha forzado a tener relaciones sexuales?<br>
+                            <input type="radio" id="forzar" name="forzar" value="1" onchange="document.getElementById('outforzar').value=value"> muchas veces<br>
+                            <input type="radio" id="forzar" name="forzar" value="0.5" onchange="document.getElementById('outforzar').value=value"> pocas veces<br>
+                            <input type="radio" id="forzar" name="forzar" value="0.25" onchange="document.getElementById('outforzar').value=value"> una vez<br>
+                            <input type="radio" id="forzar" name="forzar" value="0" onchange="document.getElementById('outforzar').value=value"> no ocurre<br>
+                            <output id="outforzar" name="outforzar" for="violencia">0</output>
+                        </p>
+                        <br>
+
+                        <p>24- ¿Ha abusado sexualmente de ti?<br>
+                            <input type="radio" id="abuso" name="abuso" value="1" onchange="document.getElementById('outabuso').value=value"> muchas veces<br>
+                            <input type="radio" id="abuso" name="abuso" value="0.5" onchange="document.getElementById('outabuso').value=value"> pocas veces<br>
+                            <input type="radio" id="abuso" name="abuso" value="0.25" onchange="document.getElementById('outabuso').value=value"> una vez<br>
+                            <input type="radio" id="abuso" name="abuso" value="0" onchange="document.getElementById('outabuso').value=value"> no ocurre<br>
+                            <output id="outabuso" name="outabuso" for="violencia">0</output>
+                        </p>
+                        <br>
+
+                        <p>25- ¿Te ha violado?<br>
+                            <input type="radio" id="violar" name="violar" value="1" onchange="document.getElementById('outviolar').value=value"> muchas veces<br>
+                            <input type="radio" id="violar" name="violar" value="0.5" onchange="document.getElementById('outviolar').value=value"> pocas veces<br>
+                            <input type="radio" id="violar" name="violar" value="0.25" onchange="document.getElementById('outviolar').value=value"> una vez<br>
+                            <input type="radio" id="violar" name="violar" value="0" onchange="document.getElementById('outviolar').value=value"> no ocurre<br>
+                            <output id="outviolar" name="outviolar" for="violencia">0</output>
+                        </p>
+                        <br>
+
+                        <div class='clear'>&nbsp;</div>
+
+                        <p>
+                            <button onclick='javascript: testModel();'>Test</button>
+                        </p>
+
+                        <p id='test-model'></p>
+            
+            </div>
+        </div>
+    </div>
+    <div class="testimonials-clean">
+        <div class="container">
+            <div class="intro">
+                <h2 class="text-center">Compartenos tu Historia</h2>
+                <p class="text-center">Our customers love us! Read what they have to say below. Aliquam sed justo ligula. Vestibulum nibh erat, pellentesque ut laoreet vitae.</p>
+            </div>
+            <div class="row people">
+                <div class="col-md-6 col-lg-4 item">
+                    <div class="box">
+                        <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est.</p>
+                    </div>
+                    <div class="author"><img class="rounded-circle" src="assets/img/1.jpg">
+                        <h5 class="name">Ben Johnson</h5>
+                        <p class="title">CEO of Company Inc.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 item">
+                    <div class="box">
+                        <p class="description">Praesent aliquam in tellus eu gravida. Aliquam varius finibus est, et interdum justo suscipit id.</p>
+                    </div>
+                    <div class="author"><img class="rounded-circle" src="assets/img/3.jpg">
+                        <h5 class="name">Carl Kent</h5>
+                        <p class="title">Founder of Style Co.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 item">
+                    <div class="box">
+                        <p class="description">Aliquam varius finibus est, et interdum justo suscipit. Vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu.</p>
+                    </div>
+                    <div class="author"><img class="rounded-circle" src="assets/img/2.jpg">
+                        <h5 class="name">Emily Clark</h5>
+                        <p class="title">Owner of Creative Ltd.</p>
+
+                        <div class='clear'>&nbsp;</div>
+
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-clean">
+        <footer>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-sm-4 col-md-3 item">
+                        <h3>Libros</h3>
+                        <ul>
+                            <li><a href="#">Libros gratis</a></li>
+                            <li><a href="#">Charlas</a></li>
+                            <li><a href="#">Audiolibros</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4 col-md-3 item">
+                        <h3>Acerca del proyecto</h3>
+                        <ul>
+                            <li><a href="#">Objetivo</a></li>
+                            <li><a href="#">Equipo</a></li>
+                            <li><a href="#">Acuerdo de privacidad</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4 col-md-3 item">
+                        <h3>Ayuda en linea</h3>
+                        <ul>
+                            <li><a href="#">Psicologos en linea</a></li>
+                            <li><a href="#">Seguridad publica</a></li>
+                            <li><a href="#">Grupos de apoyo</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-instagram"></i></a>
+                        <p class="copyright">RedFlag © 2021</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+
+<script>
+    /* Esta función se encarga de ejecutar el formulario sobre la red neuronal */
+    function testModel() {
+        var t={
+            miente: document.getElementById("outmiente").value,
+            hielo: document.getElementById("outhielo").value,
+            celos: document.getElementById("outcelos").value,
+            culpa: document.getElementById("outculpa").value,
+            ofender: document.getElementById("outofender").value,
+            humillar: document.getElementById("outhumillar").value,
+            amenaza: document.getElementById("outamenaza").value,
+            controlA : document.getElementById("outcontrolA").value,
+            controlF : document.getElementById("outcontrolF").value,
+            controlD : document.getElementById("outcontrolD").value,
+            controlL : document.getElementById("outcontrolL").value,
+            controlAP : document.getElementById("outcontrolAP").value,
+            controlAC : document.getElementById("outcontrolAC").value,
+            controlC : document.getElementById("outcontrolC").value,
+            destruye : document.getElementById("outdestruye").value,
+            manosea : document.getElementById("outmanosea").value,            
+            golpea : document.getElementById("outgolpea").value,
+            cachetada : document.getElementById("outcachetada").value,
+            patada : document.getElementById("outpatada").value,
+            encierro : document.getElementById("outencierro").value,
+            armas : document.getElementById("outarmas").value,
+            muerte : document.getElementById("outmuerte").value,
+            forzar : document.getElementById("outforzar").value,
+            abuso : document.getElementById("outabuso").value,
+            violar : document.getElementById("outviolar").value,
+            };
+
+        var result=net.run( t );
+
+        document.getElementById("test-model").innerHTML=JSON.stringify( result );
+        
+        }           
+</script>
+        <script>
+            /* Declaramos el set de datos de entrenamiento */
+            var train= [
+                {input:{miente: 0,hielo: 0, celos: 0, culpa: 0, ofender: 0, humillar: 0, amenaza: 0, controlA: 0, controlF: 0, controlD: 0, controlL: 0, controlAP: 0, controlAC: 0, controlC: 0, destruye: 0, manosea: 0, golpea: 0, cachetada: 0, patada: 0, encierro: 0, armas: 0, muerte: 0, forzar: 0, abuso: 0, violar: 1}, output: {s:1} },
+                {input:{miente: 0,hielo: 0, celos: 0, culpa: 0, ofender: 0, humillar: 0, amenaza: 0, controlA: 0, controlF: 0, controlD: 0, controlL: 0, controlAP: 0, controlAC: 0, controlC: 0, destruye: 0, manosea: 0, golpea: 0, cachetada: 0, patada: 0, encierro: 0, armas: 0, muerte: 0, forzar: 0, abuso: 1, violar: 0}, output: {s:1} },
+                {input:{miente: 0,hielo: 0, celos: 0, culpa: 0, ofender: 0, humillar: 0, amenaza: 0, controlA: 0, controlF: 0, controlD: 0, controlL: 0, controlAP: 0, controlAC: 0, controlC: 0, destruye: 0, manosea: 0, golpea: 0, cachetada: 0, patada: 0, encierro: 0, armas: 0, muerte: 1, forzar: 0, abuso: 0, violar: 0}, output: {s:1} },
+                {input:{miente: 0,hielo: 0, celos: 0, culpa: 0, ofender: 0, humillar: 0, amenaza: 0, controlA: 0, controlF: 0, controlD: 0, controlL: 0, controlAP: 0, controlAC: 0, controlC: 0, destruye: 0, manosea: 0, golpea: 0, cachetada: 0, patada: 0, encierro: 0, armas: 1, muerte: 0, forzar: 0, abuso: 0, violar: 0}, output: {s:1} },
+                {input:{miente: 0,hielo: 0, celos: 0, culpa: 0, ofender: 0, humillar: 0, amenaza: 0, controlA: 0, controlF: 0, controlD: 0, controlL: 0, controlAP: 0, controlAC: 0, controlC: 0, destruye: 0, manosea: 0, golpea: 0, cachetada: 0, patada: 0, encierro: 0, armas: 0, muerte: 0, forzar: 0, abuso: 0, violar: .5}, output: {s:1} },
+                {input:{miente: 0,hielo: 0, celos: 0, culpa: 0, ofender: 0, humillar: 0, amenaza: 0, controlA: 0, controlF: 0, controlD: 0, controlL: 0, controlAP: 0, controlAC: 0, controlC: 0, destruye: 0, manosea: 0, golpea: 0, cachetada: 0, patada: 0, encierro: 0, armas: 0, muerte: 0, forzar: 0, abuso: .5, violar: 0}, output: {s:1} },
+                {input:{miente: 0,hielo: 0, celos: 0, culpa: 0, ofender: 0, humillar: 0, amenaza: 0, controlA: 0, controlF: 0, controlD: 0, controlL: 0, controlAP: 0, controlAC: 0, controlC: 0, destruye: 0, manosea: 0, golpea: 0, cachetada: 0, patada: 0, encierro: 0, armas: 0, muerte: 0, forzar: .5, abuso: 0, violar: 0}, output: {s:1} },
+                {input:{miente: 0,hielo: 0, celos: 0, culpa: 0, ofender: 0, humillar: 0, amenaza: 0, controlA: 0, controlF: 0, controlD: 0, controlL: 0, controlAP: 0, controlAC: 0, controlC: 0, destruye: 0, manosea: 0, golpea: 0, cachetada: 0, patada: 0, encierro: 0, armas: 0, muerte: .5, forzar: 0, abuso: 0, violar: 0}, output: {s:1} },
+                {input:{miente: 0,hielo: 0, celos: 0, culpa: 0, ofender: 0, humillar: 0, amenaza: 0, controlA: 0, controlF: 0, controlD: 0, controlL: 0, controlAP: 0, controlAC: 0, controlC: 0, destruye: 0, manosea: 0, golpea: 0, cachetada: 0, patada: 0, encierro: 0, armas: .5, muerte: 0, forzar: 0, abuso: 0, violar: 0}, output: {s:1} },
+                {input:{miente: 0,hielo: 0, celos: 0, culpa: 0, ofender: 0, humillar: 0, amenaza: 0, controlA: 0, controlF: 0, controlD: 0, controlL: 0, controlAP: 0, controlAC: 0, controlC: 0, destruye: 0, manosea: 0, golpea: 0, cachetada: 0, patada: 0, encierro: 0, armas: 0, muerte: 0, forzar: 0, abuso: 0, violar: .25}, output: {s:1} },
+                {input:{miente: 0,hielo: 0, celos: 0, culpa: 0, ofender: 0, humillar: 0, amenaza: 0, controlA: 0, controlF: 0, controlD: 0, controlL: 0, controlAP: 0, controlAC: 0, controlC: 0, destruye: 0, manosea: 0, golpea: 0, cachetada: 0, patada: 0, encierro: 0, armas: 0, muerte: 0, forzar: 0, abuso: .25, violar: 0}, output: {s:1} },
+                {input:{miente: 0,hielo: 0, celos: 0, culpa: 0, ofender: 0, humillar: 0, amenaza: 0, controlA: 0, controlF: 0, controlD: 0, controlL: 0, controlAP: 0, controlAC: 0, controlC: 0, destruye: 0, manosea: 0, golpea: 0, cachetada: 0, patada: 0, encierro: 0, armas: 0, muerte: 0, forzar: .25, abuso: 0, violar: 0}, output: {s:1} },
+                {input:{miente: 0,hielo: 0, celos: 0, culpa: 0, ofender: 0, humillar: 0, amenaza: 0, controlA: 0, controlF: 0, controlD: 0, controlL: 0, controlAP: 0, controlAC: 0, controlC: 0, destruye: 0, manosea: 0, golpea: 0, cachetada: 0, patada: 0, encierro: 0, armas: 0, muerte: .25, forzar: 0, abuso: 0, violar: 0}, output: {s:1} },
+                {input:{miente: 0,hielo: 0, celos: 0, culpa: 0, ofender: 0, humillar: 0, amenaza: 0, controlA: 0, controlF: 0, controlD: 0, controlL: 0, controlAP: 0, controlAC: 0, controlC: 0, destruye: 0, manosea: 0, golpea: 0, cachetada: 0, patada: 0, encierro: 0, armas: .25, muerte: 0, forzar: 0, abuso: 0, violar: 0}, output: {s:1} },
+                {input:{miente: 0,hielo: 0, celos: 0, culpa: 0, ofender: 0, humillar: 0, amenaza: 0, controlA: 0, controlF: 0, controlD: 0, controlL: 0, controlAP: 0, controlAC: 0, controlC: 0, destruye: 0, manosea: 0, golpea: 0, cachetada: 0, patada: 0, encierro: 1, armas: 0, muerte: 0, forzar: 0, abuso: 0, violar: 0}, output: {s:.8} },
+                {input:{miente: 0,hielo: 0, celos: 0, culpa: 0, ofender: 0, humillar: 0, amenaza: 0, controlA: 0, controlF: 0, controlD: 0, controlL: 0, controlAP: 0, controlAC: 0, controlC: 0, destruye: 0, manosea: 0, golpea: 0, cachetada: 0, patada: 1, encierro: 0, armas: 0, muerte: 0, forzar: 0, abuso: 0, violar: 0}, output: {s:.6} },
+                {input:{miente: 0,hielo: 0, celos: 0, culpa: 0, ofender: 0, humillar: 0, amenaza: 0, controlA: 0, controlF: 0, controlD: 0, controlL: 0, controlAP: 0, controlAC: 0, controlC: 0, destruye: 0, manosea: 0, golpea: 0, cachetada: 1, patada: 0, encierro: 0, armas: 0, muerte: 0, forzar: 0, abuso: 0, violar: 0}, output: {s:.6} },
+                {input:{miente: 0,hielo: 0, celos: 0, culpa: 0, ofender: 0, humillar: 0, amenaza: 0, controlA: 0, controlF: 0, controlD: 0, controlL: 0, controlAP: 0, controlAC: 0, controlC: 0, destruye: 0, manosea: 0, golpea: 1, cachetada: 0, patada: 0, encierro: 0, armas: 0, muerte: 0, forzar: 0, abuso: 0, violar: 0}, output: {s:.6} },
+                {input:{miente: 0,hielo: 0, celos: 0, culpa: 0, ofender: 0, humillar: 0, amenaza: 0, controlA: 0, controlF: 0, controlD: 0, controlL: 0, controlAP: 0, controlAC: 0, controlC: 0, destruye: 0, manosea: 1, golpea: 0, cachetada: 0, patada: 0, encierro: 0, armas: 0, muerte: 0, forzar: 0, abuso: 0, violar: 0}, output: {s:.6} },
+                {input:{miente: 0,hielo: 0, celos: 0, culpa: 0, ofender: 0, humillar: 0, amenaza: 0, controlA: 0, controlF: 0, controlD: 0, controlL: 0, controlAP: 0, controlAC: 0, controlC: 0, destruye: 1, manosea: 0, golpea: 0, cachetada: 0, patada: 0, encierro: 0, armas: 0, muerte: 0, forzar: 0, abuso: 0, violar: 0}, output: {s:.6} },
+                {input:{miente: 0,hielo: 0, celos: 0, culpa: 0, ofender: 0, humillar: 0, amenaza: 0, controlA: 0, controlF: 0, controlD: 0, controlL: 0, controlAP: 0, controlAC: 0, controlC: 0, destruye: 0, manosea: 0, golpea: 0, cachetada: 0, patada: 0, encierro: .5, armas: 0, muerte: 0, forzar: 0, abuso: 0, violar: 0}, output: {s:.7} },
+                {input:{miente: 0,hielo: 0, celos: 0, culpa: 0, ofender: 0, humillar: 0, amenaza: 0, controlA: 0, controlF: 0, controlD: 0, controlL: 0, controlAP: 0, controlAC: 0, controlC: 0, destruye: 0, manosea: 0, golpea: 0, cachetada: 0, patada: .5, encierro: 0, armas: 0, muerte: 0, forzar: 0, abuso: 0, violar: 0}, output: {s:.6} },
+                {input:{miente: 0,hielo: 0, celos: 0, culpa: 0, ofender: 0, humillar: 0, amenaza: 0, controlA: 0, controlF: 0, controlD: 0, controlL: 0, controlAP: 0, controlAC: 0, controlC: 0, destruye: 0, manosea: 0, golpea: 0, cachetada: .5, patada: 0, encierro: 0, armas: 0, muerte: 0, forzar: 0, abuso: 0, violar: 0}, output: {s:.6} },
+                {input:{miente: 0,hielo: 0, celos: 0, culpa: 0, ofender: 0, humillar: 0, amenaza: 0, controlA: 0, controlF: 0, controlD: 0, controlL: 0, controlAP: 0, controlAC: 0, controlC: 0, destruye: 0, manosea: 0, golpea: .5, cachetada: 0, patada: 0, encierro: 0, armas: 0, muerte: 0, forzar: 0, abuso: 0, violar: 0}, output: {s:.5} },
+                {input:{miente: 0,hielo: 0, celos: 0, culpa: 0, ofender: 0, humillar: 0, amenaza: 0, controlA: 0, controlF: 0, controlD: 0, controlL: 0, controlAP: 0, controlAC: 0, controlC: 0, destruye: 0, manosea: .5, golpea: 0, cachetada: 0, patada: 0, encierro: 0, armas: 0, muerte: 0, forzar: 0, abuso: 0, violar: 0}, output: {s:.5} },
+                {input:{miente: 0,hielo: 0, celos: 0, culpa: 0, ofender: 0, humillar: 0, amenaza: 0, controlA: 0, controlF: 0, controlD: 0, controlL: 0, controlAP: 0, controlAC: 0, controlC: 0, destruye: .5, manosea: 0, golpea: 0, cachetada: 0, patada: 0, encierro: 0, armas: 0, muerte: 0, forzar: 0, abuso: 0, violar: 0}, output: {s:.5} },
+                {input:{miente: 0,hielo: 0, celos: 0, culpa: 0, ofender: 0, humillar: 0, amenaza: 0, controlA: 0, controlF: 0, controlD: 0, controlL: 0, controlAP: 0, controlAC: 0, controlC: 0, destruye: 0, manosea: 0, golpea: 0, cachetada: 0, patada: 0, encierro: .25, armas: 0, muerte: 0, forzar: 0, abuso: 0, violar: 0}, output: {s:.6} },
+                {input:{miente: 0,hielo: 0, celos: 0, culpa: 0, ofender: 0, humillar: 0, amenaza: 0, controlA: 0, controlF: 0, controlD: 0, controlL: 0, controlAP: 0, controlAC: 0, controlC: 0, destruye: 0, manosea: 0, golpea: 0, cachetada: 0, patada: .25, encierro: 0, armas: 0, muerte: 0, forzar: 0, abuso: 0, violar: 0}, output: {s:.6} },
+                {input:{miente: 0,hielo: 0, celos: 0, culpa: 0, ofender: 0, humillar: 0, amenaza: 0, controlA: 0, controlF: 0, controlD: 0, controlL: 0, controlAP: 0, controlAC: 0, controlC: 0, destruye: 0, manosea: 0, golpea: 0, cachetada: .25, patada: 0, encierro: 0, armas: 0, muerte: 0, forzar: 0, abuso: 0, violar: 0}, output: {s:.6} },
+                {input:{miente: 0,hielo: 0, celos: 0, culpa: 0, ofender: 0, humillar: 0, amenaza: 0, controlA: 0, controlF: 0, controlD: 0, controlL: 0, controlAP: 0, controlAC: 0, controlC: 0, destruye: 0, manosea: 0, golpea: .25, cachetada: 0, patada: 0, encierro: 0, armas: 0, muerte: 0, forzar: 0, abuso: 0, violar: 0}, output: {s:.3} },
+                {input:{miente: 0,hielo: 0, celos: 0, culpa: 0, ofender: 0, humillar: 0, amenaza: 0, controlA: 0, controlF: 0, controlD: 0, controlL: 0, controlAP: 0, controlAC: 0, controlC: 0, destruye: 0, manosea: .25, golpea: 0, cachetada: 0, patada: 0, encierro: 0, armas: 0, muerte: 0, forzar: 0, abuso: 0, violar: 0}, output: {s:.5} },
+                {input:{miente: 0,hielo: 0, celos: 0, culpa: 0, ofender: 0, humillar: 0, amenaza: 0, controlA: 0, controlF: 0, controlD: 0, controlL: 0, controlAP: 0, controlAC: 0, controlC: 0, destruye: .25, manosea: 0, golpea: 0, cachetada: 0, patada: 0, encierro: 0, armas: 0, muerte: 0, forzar: 0, abuso: 0, violar: 0}, output: {s:.4} },
+                {input:{miente: 0,hielo: 0, celos: 0, culpa: 0, ofender: 0, humillar: 0, amenaza: 0, controlA: 0, controlF: 0, controlD: 0, controlL: 0, controlAP: 0, controlAC: 0, controlC: 1, destruye: 0, manosea: 0, golpea: 0, cachetada: 0, patada: 0, encierro: 0, armas: 0, muerte: 0, forzar: 0, abuso: 0, violar: 0}, output: {s:.4} },
+                {input:{miente: 0,hielo: 0, celos: 0, culpa: 0, ofender: 0, humillar: 0, amenaza: 0, controlA: 0, controlF: 0, controlD: 0, controlL: 0, controlAP: 0, controlAC: 1, controlC: 0, destruye: 0, manosea: 0, golpea: 0, cachetada: 0, patada: 0, encierro: 0, armas: 0, muerte: 0, forzar: 0, abuso: 0, violar: 0}, output: {s:.4} },
+                {input:{miente: 0,hielo: 0, celos: 0, culpa: 0, ofender: 0, humillar: 0, amenaza: 0, controlA: 0, controlF: 0, controlD: 0, controlL: 0, controlAP: 1, controlAC: 0, controlC: 0, destruye: 0, manosea: 0, golpea: 0, cachetada: 0, patada: 0, encierro: 0, armas: 0, muerte: 0, forzar: 0, abuso: 0, violar: 0}, output: {s:.4} },
+                {input:{miente: 0,hielo: 0, celos: 0, culpa: 0, ofender: 0, humillar: 0, amenaza: 0, controlA: 0, controlF: 0, controlD: 0, controlL: 1, controlAP: 0, controlAC: 0, controlC: 0, destruye: 0, manosea: 0, golpea: 0, cachetada: 0, patada: 0, encierro: 0, armas: 0, muerte: 0, forzar: 0, abuso: 0, violar: 0}, output: {s:.4} },
+                {input:{miente: 0,hielo: 0, celos: 0, culpa: 0, ofender: 0, humillar: 0, amenaza: 0, controlA: 0, controlF: 0, controlD: 1, controlL: 0, controlAP: 0, controlAC: 0, controlC: 0, destruye: 0, manosea: 0, golpea: 0, cachetada: 0, patada: 0, encierro: 0, armas: 0, muerte: 0, forzar: 0, abuso: 0, violar: 0}, output: {s:.4} },
+                {input:{miente: 0,hielo: 0, celos: 0, culpa: 0, ofender: 0, humillar: 0, amenaza: 0, controlA: 0, controlF: 1, controlD: 0, controlL: 0, controlAP: 0, controlAC: 0, controlC: 0, destruye: 0, manosea: 0, golpea: 0, cachetada: 0, patada: 0, encierro: 0, armas: 0, muerte: 0, forzar: 0, abuso: 0, violar: 0}, output: {s:.4} },
+                {input:{miente: 0,hielo: 0, celos: 0, culpa: 0, ofender: 0, humillar: 0, amenaza: 0, controlA: 1, controlF: 0, controlD: 0, controlL: 0, controlAP: 0, controlAC: 0, controlC: 0, destruye: 0, manosea: 0, golpea: 0, cachetada: 0, patada: 0, encierro: 0, armas: 0, muerte: 0, forzar: 0, abuso: 0, violar: 0}, output: {s:.4} },
+                {input:{miente: 0,hielo: 0, celos: 0, culpa: 0, ofender: 0, humillar: 0, amenaza: 1, controlA: 0, controlF: 0, controlD: 0, controlL: 0, controlAP: 0, controlAC: 0, controlC: 0, destruye: 0, manosea: 0, golpea: 0, cachetada: 0, patada: 0, encierro: 0, armas: 0, muerte: 0, forzar: 0, abuso: 0, violar: 0}, output: {s:.4} },
+                {input:{miente: 0,hielo: 0, celos: 0, culpa: 0, ofender: 0, humillar: 1, amenaza: 0, controlA: 0, controlF: 0, controlD: 0, controlL: 0, controlAP: 0, controlAC: 0, controlC: 0, destruye: 0, manosea: 0, golpea: 0, cachetada: 0, patada: 0, encierro: 0, armas: 0, muerte: 0, forzar: 0, abuso: 0, violar: 0}, output: {s:.4} },
+                {input:{miente: 0,hielo: 0, celos: 0, culpa: 0, ofender: 1, humillar: 0, amenaza: 0, controlA: 0, controlF: 0, controlD: 0, controlL: 0, controlAP: 0, controlAC: 0, controlC: 0, destruye: 0, manosea: 0, golpea: 0, cachetada: 0, patada: 0, encierro: 0, armas: 0, muerte: 0, forzar: 0, abuso: 0, violar: 0}, output: {s:.4} },
+                {input:{miente: 0,hielo: 0, celos: 0, culpa: 1, ofender: 0, humillar: 0, amenaza: 0, controlA: 0, controlF: 0, controlD: 0, controlL: 0, controlAP: 0, controlAC: 0, controlC: 0, destruye: 0, manosea: 0, golpea: 0, cachetada: 0, patada: 0, encierro: 0, armas: 0, muerte: 0, forzar: 0, abuso: 0, violar: 0}, output: {s:.4} },
+                {input:{miente: 0,hielo: 0, celos: 1, culpa: 0, ofender: 0, humillar: 0, amenaza: 0, controlA: 0, controlF: 0, controlD: 0, controlL: 0, controlAP: 0, controlAC: 0, controlC: 0, destruye: 0, manosea: 0, golpea: 0, cachetada: 0, patada: 0, encierro: 0, armas: 0, muerte: 0, forzar: 0, abuso: 0, violar: 0}, output: {s:.4} },
+                {input:{miente: 0,hielo: 1, celos: 0, culpa: 0, ofender: 0, humillar: 0, amenaza: 0, controlA: 0, controlF: 0, controlD: 0, controlL: 0, controlAP: 0, controlAC: 0, controlC: 0, destruye: 0, manosea: 0, golpea: 0, cachetada: 0, patada: 0, encierro: 0, armas: 0, muerte: 0, forzar: 0, abuso: 0, violar: 0}, output: {s:.4} },
+                {input:{miente: 1,hielo: 0, celos: 0, culpa: 0, ofender: 0, humillar: 0, amenaza: 0, controlA: 0, controlF: 0, controlD: 0, controlL: 0, controlAP: 0, controlAC: 0, controlC: 0, destruye: 0, manosea: 0, golpea: 0, cachetada: 0, patada: 0, encierro: 0, armas: 0, muerte: 0, forzar: 0, abuso: 0, violar: 0}, output: {s:.4} },
+                {input:{miente: 0,hielo: 0, celos: 0, culpa: 0, ofender: 0, humillar: 0, amenaza: 0, controlA: 0, controlF: 0, controlD: 0, controlL: 0, controlAP: 0, controlAC: 0, controlC: .5, destruye: 0, manosea: 0, golpea: 0, cachetada: 0, patada: 0, encierro: 0, armas: 0, muerte: 0, forzar: 0, abuso: 0, violar: 0}, output: {s:.35} },
+                {input:{miente: 0,hielo: 0, celos: 0, culpa: 0, ofender: 0, humillar: 0, amenaza: 0, controlA: 0, controlF: 0, controlD: 0, controlL: 0, controlAP: 0, controlAC: .5, controlC: 0, destruye: 0, manosea: 0, golpea: 0, cachetada: 0, patada: 0, encierro: 0, armas: 0, muerte: 0, forzar: 0, abuso: 0, violar: 0}, output: {s:.35} },
+                {input:{miente: 0,hielo: 0, celos: 0, culpa: 0, ofender: 0, humillar: 0, amenaza: 0, controlA: 0, controlF: 0, controlD: 0, controlL: 0, controlAP: .5, controlAC: 0, controlC: 0, destruye: 0, manosea: 0, golpea: 0, cachetada: 0, patada: 0, encierro: 0, armas: 0, muerte: 0, forzar: 0, abuso: 0, violar: 0}, output: {s:.35} },
+                {input:{miente: 0,hielo: 0, celos: 0, culpa: 0, ofender: 0, humillar: 0, amenaza: 0, controlA: 0, controlF: 0, controlD: 0, controlL: .5, controlAP: 0, controlAC: 0, controlC: 0, destruye: 0, manosea: 0, golpea: 0, cachetada: 0, patada: 0, encierro: 0, armas: 0, muerte: 0, forzar: 0, abuso: 0, violar: 0}, output: {s:.35} },
+                {input:{miente: 0,hielo: 0, celos: 0, culpa: 0, ofender: 0, humillar: 0, amenaza: 0, controlA: 0, controlF: 0, controlD: .5, controlL: 0, controlAP: 0, controlAC: 0, controlC: 0, destruye: 0, manosea: 0, golpea: 0, cachetada: 0, patada: 0, encierro: 0, armas: 0, muerte: 0, forzar: 0, abuso: 0, violar: 0}, output: {s:.35} },
+                {input:{miente: 0,hielo: 0, celos: 0, culpa: 0, ofender: 0, humillar: 0, amenaza: 0, controlA: 0, controlF: .5, controlD: 0, controlL: 0, controlAP: 0, controlAC: 0, controlC: 0, destruye: 0, manosea: 0, golpea: 0, cachetada: 0, patada: 0, encierro: 0, armas: 0, muerte: 0, forzar: 0, abuso: 0, violar: 0}, output: {s:.35} },
+                {input:{miente: 0,hielo: 0, celos: 0, culpa: 0, ofender: 0, humillar: 0, amenaza: 0, controlA: .5, controlF: 0, controlD: 0, controlL: 0, controlAP: 0, controlAC: 0, controlC: 0, destruye: 0, manosea: 0, golpea: 0, cachetada: 0, patada: 0, encierro: 0, armas: 0, muerte: 0, forzar: 0, abuso: 0, violar: 0}, output: {s:.35} },
+                {input:{miente: 0,hielo: 0, celos: 0, culpa: 0, ofender: 0, humillar: 0, amenaza: .5, controlA: 0, controlF: 0, controlD: 0, controlL: 0, controlAP: 0, controlAC: 0, controlC: 0, destruye: 0, manosea: 0, golpea: 0, cachetada: 0, patada: 0, encierro: 0, armas: 0, muerte: 0, forzar: 0, abuso: 0, violar: 0}, output: {s:.35} },
+                {input:{miente: 0,hielo: 0, celos: 0, culpa: 0, ofender: 0, humillar: .5, amenaza: 0, controlA: 0, controlF: 0, controlD: 0, controlL: 0, controlAP: 0, controlAC: 0, controlC: 0, destruye: 0, manosea: 0, golpea: 0, cachetada: 0, patada: 0, encierro: 0, armas: 0, muerte: 0, forzar: 0, abuso: 0, violar: 0}, output: {s:.35} },
+                {input:{miente: 0,hielo: 0, celos: 0, culpa: 0, ofender: .5, humillar: 0, amenaza: 0, controlA: 0, controlF: 0, controlD: 0, controlL: 0, controlAP: 0, controlAC: 0, controlC: 0, destruye: 0, manosea: 0, golpea: 0, cachetada: 0, patada: 0, encierro: 0, armas: 0, muerte: 0, forzar: 0, abuso: 0, violar: 0}, output: {s:.35} },
+                {input:{miente: 0,hielo: 0, celos: 0, culpa: .5, ofender: 0, humillar: 0, amenaza: 0, controlA: 0, controlF: 0, controlD: 0, controlL: 0, controlAP: 0, controlAC: 0, controlC: 0, destruye: 0, manosea: 0, golpea: 0, cachetada: 0, patada: 0, encierro: 0, armas: 0, muerte: 0, forzar: 0, abuso: 0, violar: 0}, output: {s:.35} },
+                {input:{miente: 0,hielo: 0, celos: .5, culpa: 0, ofender: 0, humillar: 0, amenaza: 0, controlA: 0, controlF: 0, controlD: 0, controlL: 0, controlAP: 0, controlAC: 0, controlC: 0, destruye: 0, manosea: 0, golpea: 0, cachetada: 0, patada: 0, encierro: 0, armas: 0, muerte: 0, forzar: 0, abuso: 0, violar: 0}, output: {s:.35} },
+                {input:{miente: 0,hielo: .5, celos: 0, culpa: 0, ofender: 0, humillar: 0, amenaza: 0, controlA: 0, controlF: 0, controlD: 0, controlL: 0, controlAP: 0, controlAC: 0, controlC: 0, destruye: 0, manosea: 0, golpea: 0, cachetada: 0, patada: 0, encierro: 0, armas: 0, muerte: 0, forzar: 0, abuso: 0, violar: 0}, output: {s:.35} },
+                {input:{miente: .5,hielo: 0, celos: 0, culpa: 0, ofender: 0, humillar: 0, amenaza: 0, controlA: 0, controlF: 0, controlD: 0, controlL: 0, controlAP: 0, controlAC: 0, controlC: 0, destruye: 0, manosea: 0, golpea: 0, cachetada: 0, patada: 0, encierro: 0, armas: 0, muerte: 0, forzar: 0, abuso: 0, violar: 0}, output: {s:.35} },
+                {input:{miente: 0,hielo: 0, celos: 0, culpa: 0, ofender: 0, humillar: 0, amenaza: 0, controlA: 0, controlF: 0, controlD: 0, controlL: 0, controlAP: 0, controlAC: 0, controlC: .25, destruye: 0, manosea: 0, golpea: 0, cachetada: 0, patada: 0, encierro: 0, armas: 0, muerte: 0, forzar: 0, abuso: 0, violar: 0}, output: {s:.25} },
+                {input:{miente: 0,hielo: 0, celos: 0, culpa: 0, ofender: 0, humillar: 0, amenaza: 0, controlA: 0, controlF: 0, controlD: 0, controlL: 0, controlAP: 0, controlAC: .25, controlC: 0, destruye: 0, manosea: 0, golpea: 0, cachetada: 0, patada: 0, encierro: 0, armas: 0, muerte: 0, forzar: 0, abuso: 0, violar: 0}, output: {s:.25} },
+                {input:{miente: 0,hielo: 0, celos: 0, culpa: 0, ofender: 0, humillar: 0, amenaza: 0, controlA: 0, controlF: 0, controlD: 0, controlL: 0, controlAP: .25, controlAC: 0, controlC: 0, destruye: 0, manosea: 0, golpea: 0, cachetada: 0, patada: 0, encierro: 0, armas: 0, muerte: 0, forzar: 0, abuso: 0, violar: 0}, output: {s:.25} },
+                {input:{miente: 0,hielo: 0, celos: 0, culpa: 0, ofender: 0, humillar: 0, amenaza: 0, controlA: 0, controlF: 0, controlD: 0, controlL: .25, controlAP: 0, controlAC: 0, controlC: 0, destruye: 0, manosea: 0, golpea: 0, cachetada: 0, patada: 0, encierro: 0, armas: 0, muerte: 0, forzar: 0, abuso: 0, violar: 0}, output: {s:.25} },
+                {input:{miente: 0,hielo: 0, celos: 0, culpa: 0, ofender: 0, humillar: 0, amenaza: 0, controlA: 0, controlF: 0, controlD: .25, controlL: 0, controlAP: 0, controlAC: 0, controlC: 0, destruye: 0, manosea: 0, golpea: 0, cachetada: 0, patada: 0, encierro: 0, armas: 0, muerte: 0, forzar: 0, abuso: 0, violar: 0}, output: {s:.25} },
+                {input:{miente: 0,hielo: 0, celos: 0, culpa: 0, ofender: 0, humillar: 0, amenaza: 0, controlA: 0, controlF: .25, controlD: 0, controlL: 0, controlAP: 0, controlAC: 0, controlC: 0, destruye: 0, manosea: 0, golpea: 0, cachetada: 0, patada: 0, encierro: 0, armas: 0, muerte: 0, forzar: 0, abuso: 0, violar: 0}, output: {s:.25} },
+                {input:{miente: 0,hielo: 0, celos: 0, culpa: 0, ofender: 0, humillar: 0, amenaza: 0, controlA: .25, controlF: 0, controlD: 0, controlL: 0, controlAP: 0, controlAC: 0, controlC: 0, destruye: 0, manosea: 0, golpea: 0, cachetada: 0, patada: 0, encierro: 0, armas: 0, muerte: 0, forzar: 0, abuso: 0, violar: 0}, output: {s:.25} },
+                {input:{miente: 0,hielo: 0, celos: 0, culpa: 0, ofender: 0, humillar: 0, amenaza: .25, controlA: 0, controlF: 0, controlD: 0, controlL: 0, controlAP: 0, controlAC: 0, controlC: 0, destruye: 0, manosea: 0, golpea: 0, cachetada: 0, patada: 0, encierro: 0, armas: 0, muerte: 0, forzar: 0, abuso: 0, violar: 0}, output: {s:.25} },
+                {input:{miente: 0,hielo: 0, celos: 0, culpa: 0, ofender: 0, humillar: .25, amenaza: 0, controlA: 0, controlF: 0, controlD: 0, controlL: 0, controlAP: 0, controlAC: 0, controlC: 0, destruye: 0, manosea: 0, golpea: 0, cachetada: 0, patada: 0, encierro: 0, armas: 0, muerte: 0, forzar: 0, abuso: 0, violar: 0}, output: {s:.25} },
+                {input:{miente: 0,hielo: 0, celos: 0, culpa: 0, ofender: .25, humillar: 0, amenaza: 0, controlA: 0, controlF: 0, controlD: 0, controlL: 0, controlAP: 0, controlAC: 0, controlC: 0, destruye: 0, manosea: 0, golpea: 0, cachetada: 0, patada: 0, encierro: 0, armas: 0, muerte: 0, forzar: 0, abuso: 0, violar: 0}, output: {s:.25} },
+                {input:{miente: 0,hielo: 0, celos: 0, culpa: .25, ofender: 0, humillar: 0, amenaza: 0, controlA: 0, controlF: 0, controlD: 0, controlL: 0, controlAP: 0, controlAC: 0, controlC: 0, destruye: 0, manosea: 0, golpea: 0, cachetada: 0, patada: 0, encierro: 0, armas: 0, muerte: 0, forzar: 0, abuso: 0, violar: 0}, output: {s:.25} },
+                {input:{miente: 0,hielo: 0, celos: .25, culpa: 0, ofender: 0, humillar: 0, amenaza: 0, controlA: 0, controlF: 0, controlD: 0, controlL: 0, controlAP: 0, controlAC: 0, controlC: 0, destruye: 0, manosea: 0, golpea: 0, cachetada: 0, patada: 0, encierro: 0, armas: 0, muerte: 0, forzar: 0, abuso: 0, violar: 0}, output: {s:.25} },
+                {input:{miente: 0,hielo: .25, celos: 0, culpa: 0, ofender: 0, humillar: 0, amenaza: 0, controlA: 0, controlF: 0, controlD: 0, controlL: 0, controlAP: 0, controlAC: 0, controlC: 0, destruye: 0, manosea: 0, golpea: 0, cachetada: 0, patada: 0, encierro: 0, armas: 0, muerte: 0, forzar: 0, abuso: 0, violar: 0}, output: {s:.25} },
+                {input:{miente: .25,hielo: 0, celos: 0, culpa: 0, ofender: 0, humillar: 0, amenaza: 0, controlA: 0, controlF: 0, controlD: 0, controlL: 0, controlAP: 0, controlAC: 0, controlC: 0, destruye: 0, manosea: 0, golpea: 0, cachetada: 0, patada: 0, encierro: 0, armas: 0, muerte: 0, forzar: 0, abuso: 0, violar: 0}, output: {s:.25} },
+                ];
+
+            /* Declaramos el set de datos de test, para comprobar como responde la red neuronal entrenada */
+            var test= [
+                {input:{miente: 0,hielo: 0, celos: 0, culpa: 0, ofender: 0, humillar: 0, amenaza: 0, controlA: 0, controlF: 0, controlD: 0, controlL: 0, controlAP: 0, controlAC: 0, controlC: 0, destruye: 0, manosea: 0, golpea: 0, cachetada: 0, patada: 0, encierro: 0, armas: 0, muerte: 0, forzar: 0, abuso: 0, violar: 0}, output: {s:0} },
+                {input:{miente: 0,hielo: 0, celos: 0, culpa: 0, ofender: 0, humillar: 0, amenaza: 0, controlA: 0, controlF: 0, controlD: 0, controlL: 0, controlAP: 0, controlAC: 0, controlC: 0, destruye: 0, manosea: 0, golpea: 0, cachetada: 0, patada: 0, encierro: 0, armas: 0, muerte: 0, forzar: 0, abuso: 0, violar: 0}, output: {s:0} },
+                {input:{miente: 0,hielo: 0, celos: 0, culpa: 0, ofender: 0, humillar: 0, amenaza: 0, controlA: 0, controlF: 0, controlD: 0, controlL: 0, controlAP: 0, controlAC: 0, controlC: 0, destruye: 0, manosea: 0, golpea: 0, cachetada: 0, patada: 0, encierro: 0, armas: 0, muerte: 0, forzar: 0, abuso: 0, violar: 0}, output: {s:0} },
+                {input:{miente: 0,hielo: 0, celos: 0, culpa: 0, ofender: 0, humillar: 0, amenaza: 0, controlA: 0, controlF: 0, controlD: 0, controlL: 0, controlAP: 0, controlAC: 0, controlC: 0, destruye: 0, manosea: 0, golpea: 0, cachetada: 0, patada: 0, encierro: 0, armas: 0, muerte: 0, forzar: 0, abuso: 0, violar: 0}, output: {s:0} },
+                {input:{miente: 0,hielo: 0, celos: 0, culpa: 0, ofender: 0, humillar: 0, amenaza: 0, controlA: 0, controlF: 0, controlD: 0, controlL: 0, controlAP: 0, controlAC: 0, controlC: 0, destruye: 0, manosea: 0, golpea: 0, cachetada: 0, patada: 0, encierro: 0, armas: 0, muerte: 0, forzar: 0, abuso: 0, violar: 0}, output: {s:0} },
+                {input:{miente: 0,hielo: 0, celos: 0, culpa: 0, ofender: 0, humillar: 0, amenaza: 0, controlA: 0, controlF: 0, controlD: 0, controlL: 0, controlAP: 0, controlAC: 0, controlC: 0, destruye: 0, manosea: 0, golpea: 0, cachetada: 0, patada: 0, encierro: 0, armas: 0, muerte: 0, forzar: 0, abuso: 0, violar: 0}, output: {s:0} },
+                {input:{miente: 0,hielo: 0, celos: 0, culpa: 0, ofender: 0, humillar: 0, amenaza: 0, controlA: 0, controlF: 0, controlD: 0, controlL: 0, controlAP: 0, controlAC: 0, controlC: 0, destruye: 0, manosea: 0, golpea: 0, cachetada: 0, patada: 0, encierro: 0, armas: 0, muerte: 0, forzar: 0, abuso: 0, violar: 0}, output: {s:0} },
+                {input:{miente: 0,hielo: 0, celos: 0, culpa: 0, ofender: 0, humillar: 0, amenaza: 0, controlA: 0, controlF: 0, controlD: 0, controlL: 0, controlAP: 0, controlAC: 0, controlC: 0, destruye: 0, manosea: 0, golpea: 0, cachetada: 0, patada: 0, encierro: 0, armas: 0, muerte: 0, forzar: 0, abuso: 0, violar: 0}, output: {s:0} },
+                {input:{miente: 0,hielo: 0, celos: 0, culpa: 0, ofender: 0, humillar: 0, amenaza: 0, controlA: 0, controlF: 0, controlD: 0, controlL: 0, controlAP: 0, controlAC: 0, controlC: 0, destruye: 0, manosea: 0, golpea: 0, cachetada: 0, patada: 0, encierro: 0, armas: 0, muerte: 0, forzar: 0, abuso: 0, violar: 0}, output: {s:0} },
+                {input:{miente: 0,hielo: 0, celos: 0, culpa: 0, ofender: 0, humillar: 0, amenaza: 0, controlA: 0, controlF: 0, controlD: 0, controlL: 0, controlAP: 0, controlAC: 0, controlC: 0, destruye: 0, manosea: 0, golpea: 0, cachetada: 0, patada: 0, encierro: 0, armas: 0, muerte: 0, forzar: 0, abuso: 0, violar: 0}, output: {s:0} },
+                ];
+
+            /* Declaramos la red neuronal */
+            var net = new brain.NeuralNetwork();
+
+            /* Entrenamos la red neuronal con los datos de entrenamiento */
+            net.train( train );
+
+            /* Chequeamos que tal resultados da la red neuronal con los datos de entrenamiento */
+            var checkTrain=checkSet( net,train );
+            document.getElementById("check-train").innerHTML=JSON.stringify( checkTrain );
+
+            /* Chequeamos que tal resultados da la red neuronal con los datos de test */
+            var checkTest=checkSet( net, test );
+            document.getElementById("check-test").innerHTML=JSON.stringify( checkTest );
+
+            /* Esta función ejecuta todo un set de datos sobre la red neuronal y devuelve: número de fallos(loss), número de aciertos(correct), % de aciertos */
+            function checkSet( net, set ) {
+                var ret={ loss: 0, correct: 0, accuracity: 0 };
+                
+                for ( var i=0; i<set.length; i++ ) {
+                    var result=net.run( set[i].input );
+
+                    if ( result.s>=set[i].output.s-0.25 && result.s<=set[i].output.s+0.25 ) {
+                        ret.correct++;
+                        } else {
+                        ret.loss++;
+                        }
+                    }
+
+                ret.accuracity=ret.correct*100/set.length;
+
+                return ret;
+                }   
+        </script>
+</body>
+
+</html>
+
+
